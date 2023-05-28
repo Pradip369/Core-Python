@@ -1,0 +1,9 @@
+insert into shreeji (id,name,exam_name) values (3,'kpc','gate');
+
+delete from shreeji where id in (2,1);
+
+select * from shreeji where name='pradip';
+
+select * from shreeji;
+
+select distinct(name) from shreeji;

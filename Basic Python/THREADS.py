@@ -1,4 +1,4 @@
-======================== SINGLE THREADING ================
+# ======================== SINGLE THREADING ================
 import threading
 from time import *
 if threading.current_thread()==threading.main_thread():
@@ -6,7 +6,7 @@ if threading.current_thread()==threading.main_thread():
 else:
     print("Oops!!!! your thread is not main thread....")    
     
-==========================MULTY TASKING THTREADING ==========
+# ==========================MULTY TASKING THTREADING ==========
 from threading import *
 def trd():
     print("Hello....") 
@@ -15,7 +15,7 @@ for i in range(6):
     t = Thread(target=trd) 
     t.start()
 
-========WITH ARG============
+# ========WITH ARG============
 def trd(i):
     print("Hello....",i) 
 for i in range(6):
@@ -23,7 +23,7 @@ for i in range(6):
     t.start()
 
 
-==================== USING CLASS METHOD ===============
+# ==================== USING CLASS METHOD ===============
 class mythread(Thread):
     def run(self):
         for i in range(6):
@@ -45,14 +45,14 @@ class mythread(Thread):
         print(self.str)
         for i in range(6):
             print(i)
-            
+
 p1 = mythread("This is 1")
 p1.start()
 # p1.join()
 p2=mythread("This is 2")
 p2.start()
 
-=============================== THREAD SYNCHRONIZATION =================================
+# =============================== THREAD SYNCHRONIZATION =================================
 class railway:
     def __init__(self,available):
         self.available=available
@@ -78,9 +78,3 @@ t2.setName("Person 2")
 t1.start()
 # t1.join()       OR======>>>>>>
 t2.start()
-
-
-
-               
-        
-      

@@ -136,10 +136,3 @@ with open('gmail.txt','a') as f:
     print(f.tell())
     f.seek(0,0)
     print(f.tell())
-    
-  
-
-    
-
-
-    

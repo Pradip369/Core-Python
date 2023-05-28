@@ -36,5 +36,4 @@ while choice<5:
     else:
         print("something went wrong")
         break
-    print("Your stack is : ",s)                          
-         
+    print("Your stack is : ",s)

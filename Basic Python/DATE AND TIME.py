@@ -1,5 +1,6 @@
+import os
 
-============================= TIME =======================
+# ============================= TIME =======================
 from datetime import * 
 epoch = time.time()
 print(epoch)
@@ -7,7 +8,7 @@ t=time.ctime()
 print(t)
 
 
-============================= DATETIME ======================
+# ============================= DATETIME ======================
 now = datetime.now()
 dt=date.today()
 print(dt)
@@ -16,7 +17,7 @@ print(now.day,'/',now.month,'/',now.year)
 print(now.hour,':',now.minute,':',now.second)
 print(dt.strftime("%Z(UTC)"))
 
-=========================RANDOM=======================
+# =========================RANDOM=======================
 import random,time
 for i in range(10):
     now = datetime.now()
@@ -25,7 +26,7 @@ for i in range(10):
     # print(r)
     time.sleep(2)
 
-============================== TIME MESURNMENT ===================
+# ============================== TIME MESURNMENT ===================
 from time import *
 t1 = perf_counter()
 sum = 0
@@ -35,9 +36,14 @@ for i in range(1000000):
 t2 = perf_counter()
 print("This program execution time",t2-t1)    
 
-============================ CALENDAR ==================================
+# ============================ CALENDAR ==================================
 from calendar import *
 yy = int(input("Enter year : "))
 mm = int(input("Enter month : "))
 str = month(yy,mm)
 print(str)
+
+print(float('inf'))
+print(float(True))
+print(float('98'+'85'))
+print(float('73+46'))
